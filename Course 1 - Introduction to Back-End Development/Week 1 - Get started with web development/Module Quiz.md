@@ -1,6 +1,6 @@
 ## Module Quiz: Get started with Web Development
 
-1. When two computers connect directly to each other, this forms **\*\***\_\_**\*\***.
+1. When two computers connect directly to each other, this forms \_\_\_.
 
    ```
    Answer:
@@ -10,7 +10,7 @@
    When two computers connect directly to each other, this forms a network.
    ```
 
-2. The programs that run on a computer are called the **\*\***\_\_**\*\***.
+2. The programs that run on a computer are called the \_\_\_.
 
    ```
    Answer:
@@ -20,7 +20,7 @@
    The programs and services that run on a computer are the software.
    ```
 
-3. The structure of a web page is defined using **\*\***\_\_**\*\***.
+3. The structure of a web page is defined using \_\_\_.
 
    ```
    Answer:
@@ -30,7 +30,7 @@
    HTML defines the structure and content of a web page.
    ```
 
-4. The style of a web page is defined using **\*\***\_\_**\*\***.
+4. The style of a web page is defined using \_\_\_.
 
    ```
    Answer:
@@ -50,7 +50,7 @@
    Internet Protocols version 4 and 6 are most commonly used for communication.
    ```
 
-6. To communicate with another computer on a network, your computer sends a message called an **\*\*\*\***\_\_**\*\*\*\***.
+6. To communicate with another computer on a network, your computer sends a message called an \_\_\_.
 
    ```
    Answer:
@@ -80,7 +80,7 @@
    Frameworks allow developers to build applications quicker by providing a structure to build with.
    ```
 
-9. As a developer, it is best to use a **\*\***\_**\*\*** to write and maintain code.
+9. As a developer, it is best to use a \_\_\_ to write and maintain code.
 
    ```
    Answer:
