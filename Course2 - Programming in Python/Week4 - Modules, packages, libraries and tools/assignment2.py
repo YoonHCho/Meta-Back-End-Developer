@@ -117,4 +117,4 @@ def test_struc(input_value):
 
     # raise NotImplementedError()
 
-# Run these tests with `python3 -m pytest test_spellcheck.py`
+# Run these tests with `py -m pytest assignment2.py`
