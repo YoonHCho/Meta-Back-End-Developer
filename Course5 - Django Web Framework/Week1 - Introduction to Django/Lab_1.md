@@ -4,15 +4,7 @@
 pwd
 ```
 
-## Check if Django is installed OR Install Virtual Environment
-
-To check
-
-```
-python3 -m django --version
-```
-
-To Install
+## Install Virtual Environment
 
 ```
 pip3 install virtualenv
@@ -21,18 +13,32 @@ pip3 install virtualenv
 ## Create a new VE named "django-venv"
 
 ```
+python -m venv django-venv
+OR
 ~/.local/bin/virtualenv django-venv
 ```
 
 ## Activate the VE
 
 ```
+django-venv\Scripts\activate
+OR
 source django-venv/bin/activate
 ```
 
 - You can tell that the virtual environment is activated if you see the suffix inside round brackets (django-venv) on the command prompt.
 
-## Create Django Project (make sure Django is inallted)
+## Check if Django is installed and Create Django Project (make sure Django is installed)
+
+To check
+
+```
+python3 -m django --version
+```
+
+If Django is not installed
+
+**Note:** Remember to install Django while you are in the virtual environment!
 
 ```
 pip3 install django
