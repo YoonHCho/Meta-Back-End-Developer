@@ -1,0 +1,9 @@
+
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form }}
+  <!-- OR -->
+  {{ form.as_p }} <!-- will tell Django to render the form elements as paragraph tags -->
+
+  <input type="submit" value="Submit">
+</form>
