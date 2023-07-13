@@ -1,3 +1,3 @@
 ## End-of-Course Graded Assessment: Using Python
 
-![Assessment](./assessment.png)
+![Assessment](./assessment.png "By YHC")

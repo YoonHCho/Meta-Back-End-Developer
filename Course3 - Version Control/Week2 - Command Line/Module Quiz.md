@@ -1,3 +1,3 @@
 ## Module Quiz: Command Line
 
-![QUIZ](./c3w2.png)
+![QUIZ](./c3w2.png "By YHC")

@@ -1,3 +1,3 @@
 ## Module Quiz: UI Frameworks
 
-![Module Quiz](./c1w3quiz.png)
+![Module Quiz](./c1w3quiz.png "By YoonHCho")
