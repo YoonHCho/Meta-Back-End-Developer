@@ -1,0 +1,74 @@
+Start the MySQL Command Line CLI
+mysql -u root -p
+-> enter the password set at time of installation.
+
+Create Database
+Create database mydatabase;
+
+show databases; -> will list the currently available databases.
+
+Install MySQL DB API Driver - in the terminal VS Code
+pip3 install mysqlclient
+
+Enable MySQL
+To be able to use MySQL, the "DATABASES" variable in the Django project’s settings file must be properly configured.
+By default, it is set to the connection parameters for SQLite. Remove those statements. You have to add MySQL-specific settings in their place.
+You must configure at least one database in the DATABASES variable. For the configuration of the first database, its name should be ‘default’.
+The settings include the database engine, name of the database, username, and password, along with the host IP address.
+This defaults to the localhost 127.0.0.10 and the port defaults to 3306.
+
+*** settings.py ***
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mydatabase',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
+    }
+}
+
+The other optional parameters include:
+* sql_mode: The session SQL mode will be set to the given string. It defaults to 'STATIC_TRANS_TABLES' to prevent invalid or missing
+            values from being stored in the database.
+* default-character-set: The character set to be used. Default is utf8.
+* read_default_file: MySQL configuration file to read.
+* init_command: Initial command to issue to the server upon connection.
+
+
+
+Create database tables
+The startprojecttemplate installs some Django apps by default. Some examples include admin, auth and sessions.
+Remember that you need to create the necessary database tables for these apps.
+Run the migrate command to use the models in these apps and build their respective table structure in the current mysql database.
+
+python manage.py migrate
+
+Inside the MySQL terminal, run the following commands:
+use mydatabase;
+Show tables;
+
+Install MySQL (Jun Han) extension
+click on + button next to MYSQL on the left pane and enter the following details:
+domain name: localhost
+user:root
+password=''.
+
+Note: Some users may encounter an error such as:
+Client does not support authentication protocol requested by server; consider upgrading MySQL client
+
+This usually indicates a user privilege issue. In such cases first run a command such as:
+
+     ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+Then refresh privileges by running a command such as:
+
+     flush privileges;
+
+Now, the localhost appears in the explorer bar.
+
+Expand the section by selecting the drop-down arrow and choose mydatabase. All the tables required for the INSTALLED_APPS will be visible.
