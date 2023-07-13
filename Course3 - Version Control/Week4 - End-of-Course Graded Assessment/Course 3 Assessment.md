@@ -1,3 +1,3 @@
 ## End-of-Course Graded Assessment: Version Control
 
-![QUIZ](./assessment.png)
+![QUIZ](./assessment.png "By YHC")
