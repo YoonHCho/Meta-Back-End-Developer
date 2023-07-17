@@ -1,0 +1,22 @@
+<!-- load static for image -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Lemon</title>
+</head>
+<body>
+  <!-- Add include tag -->.
+  {% include 'partials/_header.html' %}
+
+  <main>
+  <!-- Begin block content -->
+  {% block content %}
+  {% endblock %}
+  <!-- End block content -->
+  </main>
+</body>
+</html>
